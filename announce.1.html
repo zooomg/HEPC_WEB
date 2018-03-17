@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HEPC</title>
+  <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+  <meta charset="utf-8">
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"></link>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/dropdown.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/dropdown.css"></link>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/checkbox.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/checkbox.css"></link>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/components/list.css"></link>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+</head>
+<body>
+  <div class="pusher">
+  <div class="background">
+    <div class="cover">
+      <div class="ui vertical masthead center aligned segment" style="min-height:0;">
+        <div class="ui container">
+          <div class="ui inverted secondary menu">
+            <h1 class="header item"><a href="./index.html">HEPC</a></h1>
+            <div class="right item">
+            <div class="ui stackable secondary menu">
+              <a class="qna item">FAQ
+                <div class="ui qna modal">
+                  <div class="header">자주 묻는 질문</div>
+                  <div class="content">
+                    <div class="ui relaxed ordered list">
+                      <div class="item">
+                        <div class="header">사용 언어 및 컴파일 버전에 제한이 있나요?</div>
+                        <div class="description">사용 언어는 Maven Division의 경우 C, C++11, Java, Prime Division의 경우 추가적으로 Python3도 사용이 가능하며 각 언어별 버전은 java8u101, c++ 4.8.4, python3.6 입니다. 제출된 소스코드는 해당 컴파일 버전에서 컴파일 되어야 하며, Windows 또는 Linux에서 실행이 되어야 합니다.</div>
+                      </div>
+                      <div class="item">
+                        <div class="header">VIM이나 Eclipse와 같이 다른 종류의 편집기를 사용해도 되나요?</div>        
+                        <div class="description">사용 가능합니다. 팀에서 개발하기 편한 편집기로 소스코드를 작성하여 제출 하시면 됩니다.</div>
+                      </div>
+                      <div class="item">
+                        <div class="header">문제는 어떤 형식으로 나오나요?</div>
+                        <div class="description">문제의 형식은 ACM-ICPC의 형식을 따릅니다. 문제와 예시 입력, 예시 출력이 주어지고, 프로그래밍을 통해 문제를 해결하는 방식입니다.</div>
+                      </div>
+                      <div class="item">
+                        <div class="header">순위는 어떻게 정해지나요?</div>
+                        <div class="description">순위는 1차적으로, 정답 문제 수가 많은 참가자가 높은 순위를 부여 받습니다. 2차적으로, 정답 문제 수가 같은 참가자는 패널티가 적을 수록 높은 순위를 부여받습니다. 3차적으로, 마지막으로 정답으로 인정된 답안의 제출 시간이 빠를 수록 높은 순위를 부여받습니다. 추가적으로 모든 참가자는 실시간으로 순위를 확인하실 수 있습니다.</div>
+                      </div>
+                      <div class="item">
+                        <div class="header">채점은 어떻게 이루어지나요?</div>
+                        <div class="description">백준온라인저지를 통해 소스코드를 제출하면, 채점 서버에서 여러분의 소스 코드를 실행, 결과를 정답과 대조하여 정답 여부를 확인합니다.</div>
+                      </div>
+                      <div class="item">
+                        <div class="header">참가자가 주의해야 할 사항은 무엇인가요?</div>
+                        <div class="description">대회 중에는 레퍼런스 사이트(http://en.cppreference.com/)을 제외한 어떠한 인터넷 웹사이트의 접근도 금지되어 있습니다. 또한, 팀 노트와 문제지 이외에 어떠한 인쇄물의 반입이 금지되어 있으므로 주의해 주십시오. 중대한 실격 사유가 될 수 있습니다. 팀노트의 매수는 25장(단면)이하이며 인쇄된 형태의 팀노트여야 합니다. 또, JAVA로 문제를 풀 경우, 시스템 관련 라이브러리는 가능하면 쓰지 않는 것이 좋습니다. 경우에 따라 중대한 실격 사유가 될 수 있습니다.</div>
+                      </div>
+                      <div class="item">
+                        <div class="header">대회 중간에 대회장을 나갔다와도 되나요?</div>
+                        <div class="description">대회 종료까지 화장실을 가는 것 이외에는 대회장을 떠날 수 없습니다. 허가 없는 장소 이탈 또한 실격 사유가 됩니다.</div>
+                      </div>
+                      <div class="item">
+                        <div class="header">대회 도중 문제에 대해 궁금한 점이 있으면 어떻게 하죠?</div>
+                        <div class="description">백준온라인저지를 통해 질문하시거나 현장 스탭들에게 직접 문의하시면 됩니다.</div>
+                      </div>
+                      <div class="item">
+                        <div class="header">저녁 식사는 어떻게 하나요?</div>
+                        <div class="description">제공 되지 않지만 간단한 다과류가 준비되어있습니다.</div>
+                      </div>
+                      <div class="item">
+                        <div class="header">특성화고 졸업생은 왜 PRIME DIVISION에 참가할 수 없나요?</div>
+                        <div class="item">운영위에서 고등학교에서 먼저 프로그래밍을 경험해본 학생과 대학에서 처음 경험해본 학생들의 실력차이가 클 것으로 판단되어 PRIME DIVISION에 참가하실 수 없게 되었습니다. 특성화고 졸업생은 대신 MAVEN DIVISION에 참여하실 수 있으며, 팀구성하실 때 만약 신입생끼리 팀 구성하실 수 밖에 없으시다면 특성화고 졸업생 2명이상 되도록 하시길 권장합니다.</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </a>
+              <a class="item" id="right-sidebar-toggle">공지사항</a>
+              <a class="registration item">등록하기</a>
+              <div href="" class="ui right dropdown item">
+                예시문제
+                <div class="menu">
+                  <a href="./PRIME.pdf" class="item">PRIME</a>
+                  <a href="./MAVEN.pdf" class="item">MAVEN</a>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui text container">
+          <h2 class="ui inverted header">
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="content" style="opacity: 0.9;">
+    <div class="ui basic container" style="margin-top: 3em;">
+      <div class="ui basic segment">
+          <h1 class="ui header">
+            공지사항
+          </h2>
+          <div class="ui feed">
+                <div class="event">
+                  <div class="content">
+                    <div class="summary">
+                      대회 관련 문의 안내
+                      <div class="date">
+                        2017.4.24
+                      </div>
+                    </div>
+                    <div class="extra text">
+                      대회 관련 문의는 msgy95@gmail.com으로 해주시기 바랍니다.
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="event">
+                  <div class="content">
+                    <div class="summary">
+                      참가접수 안내
+                      <div class="date">
+                        2017.4.26
+                      </div>
+                    </div>
+                    <div class="extra text">
+                      참가 신청 접수가 시작되었습니다!
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="event">
+                  <div class="content">
+                    <div class="summary">
+                      참가현황 중간공지 안내
+                      <div class="date">
+                        2017.4.27
+                      </div>
+                    </div>
+                    <div class="extra text">
+                      현재 많은 분들이 접수가 되었는지 궁금하신거 같습니다. 저희가 따로 접수 확인 기능을 만들지 않아서 5월 5일, 10일에 참가팀 목록을 공지하도록 하겠습니다. 감사합니다.
+                    </div>
+                  </div>
+                </div>
+		<br>
+		<div class="event">
+                  <div class="content">
+                    <div class="summary">
+                      멤버 교체 안내
+                      <div class="date">
+                        2017.5.1
+                      </div>
+                    </div>
+                    <div class="extra text">
+                      접수기간 중 팀 구성원을 교체를 희망하실 경우 문의 메일을 보내주시기 바랍니다.
+                    </div>
+                  </div>
+                </div>
+		<br>
+                <div class="event">
+                  <div class="content">
+                    <div class="summary">
+                      접수 중간 공지
+                      <div class="date">
+                        2017.5.5
+                      </div>
+                    </div>
+                    <div class="extra text">
+                      <b>PRIME</b> 66팀<br><br>
+                      Chamel, ZaSal, TUNSI, woong, Reo, chaewoon13, following, SovalD, TNT, suyeong, 17minsuk, 1, TigerP, Lv1_RootHair, God, Danden, TaeUnisef, -, Iclit, mud, Yeonsu, KYJ, Kim_yongjun, TheKinGod_JH, notcodingyeschicken, -W-, K, maeyoung, Songhae_is_sorry, mjh5758, Ramen, arten, BSY, Chups, Mabackim, codingtogether, 1, babyturtle, Hyunil, AJS-RDCPP, alchonjoa, Sungwoojoa, Team_Name, Jeongin, Leejunho, nobrain, Null, hy, Creativebox, chupa, HanSaeJu, Ak, jungyoon, soojung, HSH, NOT-YOUR-CODE, GOD-ICT, nopigom, simon, Alphacar, Wildlaws, MULTITAB, mandoo, lee, Lhn, HS<br><br>
+                      <b>MAVEN</b> 16팀<br><br>
+                      fossil, ZoomInGun, 1Q2W3E4R, Neogulman, howmanybits, LivingLegacy, JangBigal, EXITORS, Janus, kpop-girls, ROMANGs, Masterpiece, POTG, Coaillche, Umjoo-Coding, Hack_INJUNG<br>
+                    </div>
+                  </div>
+                </div>
+		<br>
+		<div class="event">
+                  <div class="content">
+                    <div class="summary">
+                      저녁식사 및 결강사유서 안내
+                      <div class="date">
+                        2017.5.8
+                      </div>
+                    </div>
+                    <div class="extra text">
+                      저녁식사는 제공되지 않으므로 드시고 오시길 추천하며, 간단한 다과류는 준비되어 있습니다.<br>
+		      5월 11일 오후 5시이후 수업에 대해 결강사유서가 발급되오니 참고하여 대회에 참여하여 주시기 바랍니다.
+                    </div>
+                  </div>
+                </div>
+		<div class="event">
+                  <div class="content">
+                    <div class="summary">
+                      접수 마감 및 대회 환경 테스트 공지
+                      <div class="date">
+                        2017.5.10
+                      </div>
+                    </div>
+                    <div class="extra text">
+                      접수가 마감되었습니다. 많은 참여와 관심 감사합니다. 오늘 12시전에 대회 환경을 미리 경험해볼 수 있는 사이트 주소와 공지사항이 담긴 메일이 접수하신 메일로 발송될 예정입니다. 꼭 확인해주시기 바랍니다.
+		      <br><br>
+                      최종 접수현황<br>
+                      <b>PRIME</b> 77팀<br><br>
+                      -, 01, 1, 17minsuk, AJS-RDCPP, Ak, alchonjoa, Alphacar, arrgh, arten, babyturtle, BSY, chaewoon13, Chamel, chupa, Chups, codingtogether, Creativebox, Danden,  God, GOD-ICT, HanSaeJu, Helloworld, hi, holyshit, HS, HSH, hy, Hyunil, Iclit, Jeongin, jungyoon, K, Kim_yongjun, KYJ, lee, Leejunho, Lhn, LJH, Lv1_RootHair, Mabackim, maeyoung, mandoo, mid, mjh5758, mud, MULTITAB, nobrain, noname, nopigom, NOT-YOUR-CODE, notcodingyeschicken, Null, PerfectZERO, Ramen, Reo, simon, Songhae_is_sorry, soojung, SovalD, Sungwoojoa, suyeong, swimtw, TaeUnisef, Team_Name, TheKinGod_JH, TigerP, TUNSI, WHO_AM_I_-w-, Wildlaws, WINNER, Won_yeeun-2, woong, Xion, yejian, Yeonsu, ZaSal<br><br>
+                      <b>MAVEN</b> 24팀<br><br>
+                      1Q2W3E4R, 42ing, Coaillche, EXITORS, fossil, Hack_INJUNG, howmanybits, JangBigal, Janus, kpop-girls, LivingLegacy, MARU, Masterpiece, Neogulman, NicePizza, NiComputerAhngocheojum, POTG, Question, ROMANGs, seongjun_carry, SMS, still_hungry, Umjoo-Coding, ZoomInGun<br>
+                    </div>
+                  </div>
+                </div>
+		<br>
+		<div class="event">
+                  <div class="content">
+                    <div class="summary">
+                      팀노트 안내
+                      <div class="date">
+                        2017.5.10
+                      </div>
+                    </div>
+                    <div class="extra text">
+                      PRIME DIVISION의 경우 팀노트 지참이 불가능합니다. MAVEN DIVISION의 경우 인쇄된 팀노트 단면 25장 지참이 가능합니다. 11일 참가 접수와 함께 팀노트도 검사할 예정입니다. 이외의 자료는 금지되어 있으며, 적발시 실격되는 점 유념해주시기 바랍니다.
+                    </div>
+                  </div>
+                </div>
+		<br>
+		<div class="event">
+                  <div class="content">
+                    <div class="summary">
+                      메일 공지 안내
+                      <div class="date">
+                        2017.5.10
+                      </div>
+                    </div>
+                    <div class="extra text">
+                      현재 몇몇 분의 이메일 발송이 거부당하거나 신청하실때 기입하셨던 메일이 부정확하여 발송이 안되고 있으므로 홈페이지에도 메일과 같은 내용을 올려드립니다. 확인 부탁드립니다.
+                        <img class="ui image" src="./email.png">
+			<a href="https://drive.google.com/drive/folders/0B5Y7gxEOVrhNZkFOMDREbXRqOHM?usp=sharing">첨부파일주소</a>
+                    </div>
+                  </div>
+                </div>
+		<br>
+		<div class="event">
+                  <div class="content">
+                    <div class="summary">
+                      대회 결과 및 결강 사유서 안내
+                      <div class="date">
+                        2017.5.12
+                      </div>
+                    </div>
+                    <div class="extra text">
+                      대회 순위는 이번주내로 정리하여 발표할 예정이며, 결강사유서 발급이 필요하신 분들은 제 이메일로 <b>이름, 학번, 수업명, 수업시간</b>을 알려주시기 바랍니다. 대회 결과 공지와 동시에 시상식 안내도 있을 예정이오니 참고하여주시기 바랍니다. 감사합니다.
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="event">
+                  <div class="content">
+                    <div class="summary">
+                      대회 문제 및 해설
+                      <div class="date">
+                        2017.5.12
+                      </div>
+                    </div>
+                    <div class="extra text">
+                      이번 대회 문제가 다소 어려웠으므로, 대회 성적에 너무 낙담하시지 않으셔도 됩니다. <br>수고많으셨습니다.<br>
+                      <a href="https://drive.google.com/drive/folders/0B5Y7gxEOVrhNTEdyTHdSTTd3T1U?usp=sharing">해설 및 문제 통합본</a>
+                    </div>
+                  </div>
+                </div>
+		<br>
+		<div class="event">
+                  <div class="content">
+                    <div class="summary">
+                      대회 최종 순위 공지
+                      <div class="date">
+                        2017.5.13
+                      </div>
+                    </div>
+                    <div class="extra text">
+                      최종 순위와 결과를 공지합니다!<br>
+                      <br>
+                      <a href="http://hepc.hycse.net/result/2017/maven/">MAVEN</a><br>
+                      <br>
+                      신청 - 24팀<br>
+                      참가 - 22팀<br>
+                      <br>
+                      대상 - ZoomInGun<br>
+                      최우수상 - howmanybits<br>
+                      우수상 - EXITORS, POTG<br>
+                      장려상 - stillhungry, LivingLegacy, Question<br>
+                      특별상 - 없음<br>
+                      <br>
+                      <a href="http://hepc.hycse.net/result/2017/prime/">PRIME</a><br>
+                      <br>
+                      신청자 - 77명<br>
+                      참가자 - 47명<br>
+                      <br>
+                      대상 - SovalD<br>
+                      최우수상 - mjh5758, Reo<br>
+                      우수상 - NOT-YOUR-CODE, PerfectZERO, Null<br>
+                      장려상 - 01, arten, HS, TigerP, AJS-RDCPP, notcodingyeschicken, Jeongin, TUNSI, HSH, chupa<br>
+                      특별상 - 없음<br>
+                      <br>
+                      * PRIME DIVISION의 경우 운영측의 제출 공지 실수로 6시 40분 이후의 제출상태로 순위를 매겼습니다.<br>
+                      * 상위 수상자를 제외한 특별상 대상자가 없으므로 수여자가 없습니다.<br>
+                      * 시상식이 있을 예정이므로 날짜가 잡히면 수상자 및 추가상품 수령자 여러분께 메일 혹은 문자로 공지해드리겠습니다.<br>
+                      * 결강사유서 발급을 일괄 처리하려 했으나, 행정팀에 본인이 직접 가야 처리해준다고 전달받아 필요하신 분은 학연산 1층 소융대 행정팀을 방문해주시기 바랍니다. 별다른 증빙서류 없이 hepc 참가자라고 말씀하시면 됩니다.<br>
+                      * <a href="https://drive.google.com/drive/folders/0B5Y7gxEOVrhNV2t2WkZsU1dTYTg?usp=sharing">사진</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+      
+      <div class="ui vertical footer segment footer">
+        <div class="ui center aligned container">
+        <br>
+        <p><i class="copyright icon"></i>2018. <b>Hanyang ERICA Programming Contest</b> All Rights Reserved.</p>
+        <br>
+        </div>
+      </div>
+    </div>
+
+  <div class="ui basic modal">
+    <i class="close icon"></i>
+    <div class="header">
+      2018 HEPC 
+    </div>
+    <div class="content" id="adduser">
+      <div class="ui inverted form">
+        <div class="inline fields">
+          <label for="division">Select your division : </label>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="division" checked="" tabindex="0" class="hidden" id="prime">
+              <label>PRIME</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="division" tabindex="0" class="hidden" id="maven">
+              <label>MAVEN</label>
+            </div>
+          </div>
+          <div class="field">
+            <label>Team Name : </label>
+            <input type="text" placeholder="Team_Name" name="TeamName">
+          </div>
+        </div>
+        <h4 class="ui dividing inverted header">Student 1</h4>
+        <div class="six fields">
+          <div class="field">
+            <label>Name</label>
+            <input type="text" placeholder="신입생" name ="Name1">
+          </div>
+          <div class="field">
+            <label>Student number</label>
+            <input type="text" placeholder="2017012368" name="Student_ID1">
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="text" placeholder="email@hanyang.ac.kr" name="Email1">
+          </div>
+          <div class="field">
+            <label>Phone number</label>
+            <input type="text" placeholder="010 1234 5678" name="Phone_Num1">
+          </div>
+          <div class="field">
+            <label>Department</label>
+            <input type="text" placeholder="소프트웨어학부" name="Department1">
+          </div>
+          <div class="field">
+            <label>State</label>
+            <div class="ui fluid selection dropdown">
+              <input type="hidden" name="State1">
+              <i class="dropdown icon"></i>
+              <div class="default text">재학</div>
+              <div class="menu">
+                <div class="item" data-value="1">재학</div>
+                <div class="item" data-value="0">휴학</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="ui dividing inverted header">Student 2</h4>
+        <div class="six disabled fields" id="std2">
+          <div class="field">
+            <label>Name</label>
+            <input type="text" placeholder="신입생" name ="Name2" disabled="disabled">
+          </div>
+          <div class="field">
+            <label>Student number</label>
+            <input type="text" placeholder="2017012368" name="Student_ID2" disabled="disabled">
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="text" placeholder="email@hanyang.ac.kr" name="Email2" disabled="disabled">
+          </div>
+          <div class="field">
+            <label>Phone number</label>
+            <input type="text" placeholder="010 1234 5678" name="Phone_Num2" disabled="disabled">
+          </div>
+          <div class="field">
+            <label>Department</label>
+            <input type="text" placeholder="소프트웨어학부" name="Department2" disabled="disabled">
+          </div>
+          <div class="field">
+            <label>State</label>
+            <div class="ui fluid selection dropdown">
+              <input type="hidden" name="State2" disabled="disabled">
+              <i class="dropdown icon"></i>
+              <div class="default text">재학</div>
+              <div class="menu">
+                <div class="item" data-value="1">재학</div>
+                <div class="item" data-value="0">휴학</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="ui dividing inverted header">Student 3</h4>
+        <div class="six disabled fields" id="std3">
+          <div class="field">
+            <label>Name</label>
+            <input type="text" placeholder="신입생" name ="Name3" disabled="disabled">
+          </div>
+          <div class="field">
+            <label>Student number</label>
+            <input type="text" placeholder="2017012368" name="Student_ID3" disabled="disabled">
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="text" placeholder="email@hanyang.ac.kr" name="Email3" disabled="disabled">
+          </div>
+          <div class="field">
+            <label>Phone number</label>
+            <input type="text" placeholder="010 1234 5678" name="Phone_Num3" disabled="disabled">
+          </div>
+          <div class="field">
+            <label>Department</label>
+            <input type="text" placeholder="소프트웨어학부" name="Department3" disabled="disabled">
+          </div>
+          <div class="field">
+            <label>State</label>
+            <div class="ui fluid selection dropdown">
+              <input type="hidden" name="State3" disabled="disabled">
+              <i class="dropdown icon"></i>
+              <div class="default text">재학</div>
+              <div class="menu">
+                <div class="item" data-value="1">재학</div>
+                <div class="item" data-value="0">휴학</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field ui checkbox" id="termbox">
+          <input type="checkbox" id="Terms" tabindex="0" class="hidden" name="Terms">
+          <label>개인정보는 대회접수, 대회공지의 채널로 이용될 것이며, 대회 결과 공지에 사용될 것입니다.</label>
+        </div>
+        <div class="ui disabled basic inverted right floated submit button" id="submitButton">Submit</div>
+      </div>
+    </div>
+    <div class="actions">
+    </div>
+  </div>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>

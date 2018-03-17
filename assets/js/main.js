@@ -262,35 +262,61 @@ $(document)
     },
     onSuccess:function(event){
       event.preventDefault();
-  var formData = $('.ui.form').serialize();
-      $.ajax({
-        type: 'POST',
-        url: 'register.php',
-        data: {
-          TeamName : $('.ui.form').form('get field', 'TeamName').val(),
-          Name1 : $('.ui.form').form('get field', 'Name1').val(),
-          Student_ID1 : $('.ui.form').form('get field', 'Student_ID1').val(),
-          Email1 : $('.ui.form').form('get field', 'Email1').val(),
-          Phone_Num1 : $('.ui.form').form('get field', 'Phone_Num1').val(),
-          State1 : $('.ui.form').form('get field', 'State1').val(),
-          Department1 : $('.ui.form').form('get field', 'Department1').val(),
-          Name2 : $('.ui.form').form('get field', 'Name2').val(),
-          Student_ID2 : $('.ui.form').form('get field', 'Student_ID2').val(),
-          Email2 : $('.ui.form').form('get field', 'Email2').val(),
-          Phone_Num2 : $('.ui.form').form('get field', 'Phone_Num2').val(),
-          State2 : $('.ui.form').form('get field', 'State2').val(),
-          Department2 : $('.ui.form').form('get field', 'Department2').val(),
-          Name3 : $('.ui.form').form('get field', 'Name3').val(),
-          Student_ID3 : $('.ui.form').form('get field', 'Student_ID3').val(),
-          Email3 : $('.ui.form').form('get field', 'Email3').val(),
-          Phone_Num3 : $('.ui.form').form('get field', 'Phone_Num3').val(),
-          State3 : $('.ui.form').form('get field', 'State3').val(),
-          Department3 : $('.ui.form').form('get field', 'Department3').val()
-        },
-        success: function (transport) {
-          alert(transport);
+      var isPrime = false;
+      $('#prime').change(function(){
+        if(this.checked){
+            isPrime = true;
         }
       });
+      if(isPrime){
+        $.ajax({
+          type: 'POST',
+          url: 'https://script.google.com/macros/s/AKfycbwp-nkvYWAiIr5GrSarRPeR46qXBZrDm3fOgQTQYSPPi7r1Qhs/exec',
+          data: {
+            TeamName : $('.ui.form').form('get field', 'TeamName').val(),
+            Name1 : $('.ui.form').form('get field', 'Name1').val(),
+            Student_ID1 : $('.ui.form').form('get field', 'Student_ID1').val(),
+            Email1 : $('.ui.form').form('get field', 'Email1').val(),
+            Phone_Num1 : $('.ui.form').form('get field', 'Phone_Num1').val(),
+            State1 : $('.ui.form').form('get field', 'State1').val(),
+            Department1 : $('.ui.form').form('get field', 'Department1').val()
+          },
+          success: function (transport) {
+            alert(transport);
+          }
+        });
+      }
+      else{
+        $.ajax({
+          type: 'POST',
+          url: 'https://script.google.com/macros/s/AKfycbySAgd3ya6nAJB-Dr2HChmTQD6tNc2X7okX1RAjgrXgXGCQb7s/exec',
+          data: {
+            TeamName : $('.ui.form').form('get field', 'TeamName').val(),
+            Name1 : $('.ui.form').form('get field', 'Name1').val(),
+            Student_ID1 : $('.ui.form').form('get field', 'Student_ID1').val(),
+            Email1 : $('.ui.form').form('get field', 'Email1').val(),
+            Phone_Num1 : $('.ui.form').form('get field', 'Phone_Num1').val(),
+            State1 : $('.ui.form').form('get field', 'State1').val(),
+            Department1 : $('.ui.form').form('get field', 'Department1').val(),
+            Name2 : $('.ui.form').form('get field', 'Name2').val(),
+            Student_ID2 : $('.ui.form').form('get field', 'Student_ID2').val(),
+            Email2 : $('.ui.form').form('get field', 'Email2').val(),
+            Phone_Num2 : $('.ui.form').form('get field', 'Phone_Num2').val(),
+            State2 : $('.ui.form').form('get field', 'State2').val(),
+            Department2 : $('.ui.form').form('get field', 'Department2').val(),
+            Name3 : $('.ui.form').form('get field', 'Name3').val(),
+            Student_ID3 : $('.ui.form').form('get field', 'Student_ID3').val(),
+            Email3 : $('.ui.form').form('get field', 'Email3').val(),
+            Phone_Num3 : $('.ui.form').form('get field', 'Phone_Num3').val(),
+            State3 : $('.ui.form').form('get field', 'State3').val(),
+            Department3 : $('.ui.form').form('get field', 'Department3').val()
+          },
+          success: function (transport) {
+            alert(transport);
+          }
+        });
+
+      }
     }
   });
   $('.ui.sidebar')

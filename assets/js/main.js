@@ -262,12 +262,7 @@ $(document)
     },
     onSuccess:function(event){
       event.preventDefault();
-      var isPrime = false;
-      $('#prime').change(function(){
-        if(this.checked){
-            isPrime = true;
-        }
-      });
+      var isPrime = $('#prime').checked;
       if(isPrime){
         $.ajax({
           type: 'POST',
@@ -282,7 +277,7 @@ $(document)
             Department1 : $('.ui.form').form('get field', 'Department1').val()
           },
           success: function (transport) {
-            alert(transport);
+            alert("참가 신청 되었습니다!");
           }
         });
       }
@@ -312,7 +307,7 @@ $(document)
             Department3 : $('.ui.form').form('get field', 'Department3').val()
           },
           success: function (transport) {
-            alert(transport);
+            alert("참가 신청 되었습니다!");
           }
         });
 

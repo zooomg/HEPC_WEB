@@ -101,15 +101,6 @@ $(document)
         }
         ]
       },
-      State1: {
-        identifier: 'State1',
-        rules: [
-        {
-          type   : 'empty',
-          prompt : 'Please select a state'
-        }
-        ]
-      },
       Name2: {
         identifier: 'Name2',
         rules: [
@@ -171,15 +162,6 @@ $(document)
         }
         ]
       },
-      State2: {
-        identifier: 'State2',
-        rules: [
-        {
-          type   : 'empty',
-          prompt : 'Please select a state'
-        }
-        ]
-      },
       Name3: {
         identifier: 'Name3',
         rules: [
@@ -232,15 +214,6 @@ $(document)
         }
         ]
       },
-      State3: {
-        identifier: 'State3',
-        rules: [
-        {
-          type   : 'empty',
-          prompt : 'Please select a state'
-        }
-        ]
-      },
       Department3: {
         identifier: 'Department3',
         rules: [
@@ -262,7 +235,8 @@ $(document)
     },
     onSuccess:function(event){
       event.preventDefault();
-      var isPrime = $('#prime').checked;
+      var isPrime = $('#prime')[0].checked;
+      $('#submitButton').attr('class',"ui disabled basic inverted right floated submit button");
       if(isPrime){
         $.ajax({
           type: 'POST',
@@ -273,11 +247,11 @@ $(document)
             Student_ID1 : $('.ui.form').form('get field', 'Student_ID1').val(),
             Email1 : $('.ui.form').form('get field', 'Email1').val(),
             Phone_Num1 : $('.ui.form').form('get field', 'Phone_Num1').val(),
-            State1 : $('.ui.form').form('get field', 'State1').val(),
             Department1 : $('.ui.form').form('get field', 'Department1').val()
           },
           success: function (transport) {
             alert("참가 신청 되었습니다!");
+            $('#submitButton').attr('class',"ui basic inverted right floated submit button");
           }
         });
       }
@@ -291,19 +265,16 @@ $(document)
             Student_ID1 : $('.ui.form').form('get field', 'Student_ID1').val(),
             Email1 : $('.ui.form').form('get field', 'Email1').val(),
             Phone_Num1 : $('.ui.form').form('get field', 'Phone_Num1').val(),
-            State1 : $('.ui.form').form('get field', 'State1').val(),
             Department1 : $('.ui.form').form('get field', 'Department1').val(),
             Name2 : $('.ui.form').form('get field', 'Name2').val(),
             Student_ID2 : $('.ui.form').form('get field', 'Student_ID2').val(),
             Email2 : $('.ui.form').form('get field', 'Email2').val(),
             Phone_Num2 : $('.ui.form').form('get field', 'Phone_Num2').val(),
-            State2 : $('.ui.form').form('get field', 'State2').val(),
             Department2 : $('.ui.form').form('get field', 'Department2').val(),
             Name3 : $('.ui.form').form('get field', 'Name3').val(),
             Student_ID3 : $('.ui.form').form('get field', 'Student_ID3').val(),
             Email3 : $('.ui.form').form('get field', 'Email3').val(),
             Phone_Num3 : $('.ui.form').form('get field', 'Phone_Num3').val(),
-            State3 : $('.ui.form').form('get field', 'State3').val(),
             Department3 : $('.ui.form').form('get field', 'Department3').val()
           },
           success: function (transport) {

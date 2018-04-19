@@ -250,7 +250,7 @@ $(document)
             Department1 : $('.ui.form').form('get field', 'Department1').val()
           },
           success: function (transport) {
-            alert("참가 신청 되었습니다!");
+            alert("성공적으로 접수되었습니다!");
             $('#submitButton').attr('class',"ui basic inverted right floated submit button");
           }
         });
@@ -278,7 +278,8 @@ $(document)
             Department3 : $('.ui.form').form('get field', 'Department3').val()
           },
           success: function (transport) {
-            alert("참가 신청 되었습니다!");
+            alert("성공적으로 접수되었습니다!");
+            $('#submitButton').attr('class',"ui basic inverted right floated submit button");
           }
         });
 

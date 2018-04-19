@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://ec2-52-79-163-190.ap-northeast-2.compute.amazonaws.com:8000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Hanyang ERICA Programming Contest</title>
+		<link href="./prime_res/reset.css" rel="stylesheet" type="text/css">
+		<link href="./prime_res/scoreboard.css" rel="stylesheet" type="text/css">
+		<link href="./prime_res/jquery.badger.css" rel="stylesheet" type="text/css">
+
+		<meta http-equiv="Content-Language" content="ko, en">
+
+		<script type="text/javascript" src="./prime_res/require.js"></script>
+		<script type="text/javascript" src="./prime_res/config.js"></script>
+		<script type="text/javascript" src="./prime_res/require-config.js"></script>
+		<script type="text/javascript">
+		// production only settings (minified)
+		if(config.environment !== 'develop') {
+			require.config({
+				paths: { "app" : "../spotboard-all.min" }
+			});
+		}
+		require(['app']);
+		</script>
+
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="app" src="./prime_res/spotboard-all.min.js"></script><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style><style type="text/css" id="problem-balloon-style">.solved-0 .solved-count { background-color: #4f0305; }
+.solved-1 .solved-count { background-color: #682f13; }
+.solved-2 .solved-count { background-color: #4f3603; }
+.solved-3 .solved-count { background-color: #656813; }
+.solved-4 .solved-count { background-color: #314f03; }
+.solved-5 .solved-count { background-color: #296813; }
+.problem-result.problem-0:before { content: "A"; }
+.problem-result.problem-1:before { content: "B"; }
+.problem-result.problem-2:before { content: "C"; }
+.problem-result.problem-3:before { content: "D"; }
+.problem-result.problem-4:before { content: "E"; }
+</style></head>
+	<body><div id="wrapper" class="show-group no-animation">
+
+		<div id="header">
+			<span id="time-elapsed">03:00</span>
+			<span id="clock-icon" class="icon"></span>
+			<span id="events-icon" class="icon hoverable" title="Show Events Timeline"></span>
+			<span id="feed-all-icon" class="icon hoverable" title="Update All Runs"></span>
+			<span id="feed-one-icon" class="icon hoverable" title="Update Single Run"></span>
+			<span id="feed-auto-icon" class="icon hoverable playing" title="Automatically Update"></span>
+			<span id="update-icon" class="icon hoverable" title="Feed New Run"></span>
+			<span id="notify-icon" class="icon hoverable" title="Toggle Notification"></span>
+			<input type="text" id="search-input">
+			<div id="page-nav">
+				<div id="page-label">Page <span class="current-page">1</span> of <span class="max-page">1</span></div>
+				<div>
+					<span id="page-left" class="disabled">&lt;&lt;</span>
+					<span id="page-right" class="disabled">&gt;&gt;</span>
+				</div>
+			</div>
+			<span></span>
+			<h1 id="contest-title">Hanyang ERICA Programming Contest</h1>
+			<div class="clear"> </div><!-- overflow: auto trick doesn't work here-->
+		</div>
+
+		<!-- Team List -->
+		<div id="body">
+			<div id="team-list"><div id="team-26" class="team solved-4 visible-first">
+	<span class="solved-count first last">4</span>
+	<span class="team-rank suffix-st">1</span>
+	<span class="team-penalty">377</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0">+2</span>
+
+		<span class="problem-result problem-1 solved" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2 solved" data-problem-id="2">+3</span>
+
+		<span class="problem-result problem-3 solved" data-problem-id="3">+2</span>
+
+		<span class="problem-result problem-4 failed" data-problem-id="4">-5</span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-1"></span><span class="balloon problem-0"></span><span class="balloon problem-3"></span><span class="balloon problem-2"></span></div>
+	<div class="team-title">
+		<span class="team-name">Vega</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-21" class="team solved-2">
+	<span class="solved-count first">2</span>
+	<span class="team-rank suffix-nd">2</span>
+	<span class="team-penalty">61</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0">+1</span>
+
+		<span class="problem-result problem-1 solved" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2 failed" data-problem-id="2">-5</span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-1"></span><span class="balloon problem-0"></span></div>
+	<div class="team-title">
+		<span class="team-name">Sati</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-19" class="team solved-2">
+	<span class="solved-count">2</span>
+	<span class="team-rank suffix-rd">3</span>
+	<span class="team-penalty">93</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0">+1</span>
+
+		<span class="problem-result problem-1 solved" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2 failed" data-problem-id="2">-1</span>
+
+		<span class="problem-result problem-3 failed" data-problem-id="3">-1</span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-0"></span><span class="balloon problem-1"></span></div>
+	<div class="team-title">
+		<span class="team-name">Pneumonoultramicroscopicsilicovolcanoconiosis</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-9" class="team solved-2">
+	<span class="solved-count">2</span>
+	<span class="team-rank suffix-th">4</span>
+	<span class="team-penalty">119</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0"></span>
+
+		<span class="problem-result problem-1 solved" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2 failed" data-problem-id="2">-1</span>
+
+		<span class="problem-result problem-3 failed" data-problem-id="3">-10</span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-0"></span><span class="balloon problem-1"></span></div>
+	<div class="team-title">
+		<span class="team-name">Jonjaler</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-17" class="team solved-2">
+	<span class="solved-count">2</span>
+	<span class="team-rank suffix-th">5</span>
+	<span class="team-penalty">133</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0">+1</span>
+
+		<span class="problem-result problem-1 solved" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2" data-problem-id="2"></span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-0"></span><span class="balloon problem-1"></span></div>
+	<div class="team-title">
+		<span class="team-name">ohj</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-13" class="team solved-2">
+	<span class="solved-count">2</span>
+	<span class="team-rank suffix-th">6</span>
+	<span class="team-penalty">154</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0">+1</span>
+
+		<span class="problem-result problem-1 solved" data-problem-id="1">+3</span>
+
+		<span class="problem-result problem-2" data-problem-id="2"></span>
+
+		<span class="problem-result problem-3 failed" data-problem-id="3">-10</span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-0"></span><span class="balloon problem-1"></span></div>
+	<div class="team-title">
+		<span class="team-name">Lhw</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-11" class="team solved-2">
+	<span class="solved-count">2</span>
+	<span class="team-rank suffix-th">7</span>
+	<span class="team-penalty">176</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0">+1</span>
+
+		<span class="problem-result problem-1 solved" data-problem-id="1">+4</span>
+
+		<span class="problem-result problem-2" data-problem-id="2"></span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-1"></span><span class="balloon problem-0"></span></div>
+	<div class="team-title">
+		<span class="team-name">KIMDONGHYUN</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-23" class="team solved-2">
+	<span class="solved-count">2</span>
+	<span class="team-rank suffix-th">8</span>
+	<span class="team-penalty">190</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0">+2</span>
+
+		<span class="problem-result problem-1 solved" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2 failed" data-problem-id="2">-3</span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-0"></span><span class="balloon problem-1"></span></div>
+	<div class="team-title">
+		<span class="team-name">SHIM</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-2" class="team solved-2">
+	<span class="solved-count">2</span>
+	<span class="team-rank suffix-th">9</span>
+	<span class="team-penalty">217</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0">+2</span>
+
+		<span class="problem-result problem-1 solved" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2" data-problem-id="2"></span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-0"></span><span class="balloon problem-1"></span></div>
+	<div class="team-title">
+		<span class="team-name">GANZI</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-20" class="team solved-2">
+	<span class="solved-count last">2</span>
+	<span class="team-rank suffix-th">10</span>
+	<span class="team-penalty">257</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0"></span>
+
+		<span class="problem-result problem-1 solved" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2" data-problem-id="2"></span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-0"></span><span class="balloon problem-1"></span></div>
+	<div class="team-title">
+		<span class="team-name">revive</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-6" class="team solved-1">
+	<span class="solved-count first">1</span>
+	<span class="team-rank suffix-th">11</span>
+	<span class="team-penalty">2</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0"></span>
+
+		<span class="problem-result problem-1" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2 failed" data-problem-id="2">-5</span>
+
+		<span class="problem-result problem-3 failed" data-problem-id="3">-2</span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-0"></span></div>
+	<div class="team-title">
+		<span class="team-name">goginyamnyam</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-7" class="team solved-1">
+	<span class="solved-count">1</span>
+	<span class="team-rank suffix-th">12</span>
+	<span class="team-penalty">3</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0"></span>
+
+		<span class="problem-result problem-1 failed" data-problem-id="1">-1</span>
+
+		<span class="problem-result problem-2 failed" data-problem-id="2">-3</span>
+
+		<span class="problem-result problem-3 failed" data-problem-id="3">-2</span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-0"></span></div>
+	<div class="team-title">
+		<span class="team-name">HiHy</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-8" class="team solved-1">
+	<span class="solved-count">1</span>
+	<span class="team-rank suffix-th">13</span>
+	<span class="team-penalty">25</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0">+1</span>
+
+		<span class="problem-result problem-1" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2 failed" data-problem-id="2">-4</span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-0"></span></div>
+	<div class="team-title">
+		<span class="team-name">Jk</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-16" class="team solved-1">
+	<span class="solved-count">1</span>
+	<span class="team-rank suffix-th">14</span>
+	<span class="team-penalty">46</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0">+1</span>
+
+		<span class="problem-result problem-1 failed" data-problem-id="1">-4</span>
+
+		<span class="problem-result problem-2 failed" data-problem-id="2">-3</span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-0"></span></div>
+	<div class="team-title">
+		<span class="team-name">Nyamnyam</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-18" class="team solved-1">
+	<span class="solved-count">1</span>
+	<span class="team-rank suffix-th">15</span>
+	<span class="team-penalty">59</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0"></span>
+
+		<span class="problem-result problem-1" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2 failed" data-problem-id="2">-4</span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-0"></span></div>
+	<div class="team-title">
+		<span class="team-name">parkjaehoon</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-12" class="team solved-1">
+	<span class="solved-count">1</span>
+	<span class="team-rank suffix-th">16</span>
+	<span class="team-penalty">65</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0">+2</span>
+
+		<span class="problem-result problem-1" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2 failed" data-problem-id="2">-1</span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-0"></span></div>
+	<div class="team-title">
+		<span class="team-name">Kwonchaeeun</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-5" class="team solved-1">
+	<span class="solved-count">1</span>
+	<span class="team-rank suffix-th">17</span>
+	<span class="team-penalty">81</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0">+2</span>
+
+		<span class="problem-result problem-1" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2 failed" data-problem-id="2">-14</span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-0"></span></div>
+	<div class="team-title">
+		<span class="team-name">GLUCA</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-25" class="team solved-1">
+	<span class="solved-count">1</span>
+	<span class="team-rank suffix-th">18</span>
+	<span class="team-penalty">85</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 solved" data-problem-id="0">+3</span>
+
+		<span class="problem-result problem-1 failed" data-problem-id="1">-1</span>
+
+		<span class="problem-result problem-2 failed" data-problem-id="2">-5</span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-0"></span></div>
+	<div class="team-title">
+		<span class="team-name">Tissue</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-22" class="team solved-1">
+	<span class="solved-count last">1</span>
+	<span class="team-rank suffix-th">19</span>
+	<span class="team-penalty">160</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 failed" data-problem-id="0">-1</span>
+
+		<span class="problem-result problem-1 solved" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2 failed" data-problem-id="2">-4</span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"><span class="balloon problem-1"></span></div>
+	<div class="team-title">
+		<span class="team-name">Seo Geurim</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-1" class="team solved-0">
+	<span class="solved-count first">0</span>
+	<span class="team-rank suffix-th">20</span>
+	<span class="team-penalty">0</span>
+	<div class="results">
+
+		<span class="problem-result problem-0" data-problem-id="0"></span>
+
+		<span class="problem-result problem-1" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2" data-problem-id="2"></span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"></div>
+	<div class="team-title">
+		<span class="team-name">applejuice</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-3" class="team solved-0">
+	<span class="solved-count">0</span>
+	<span class="team-rank suffix-th">20</span>
+	<span class="team-penalty">0</span>
+	<div class="results">
+
+		<span class="problem-result problem-0" data-problem-id="0"></span>
+
+		<span class="problem-result problem-1" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2" data-problem-id="2"></span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"></div>
+	<div class="team-title">
+		<span class="team-name">ghhan</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-4" class="team solved-0">
+	<span class="solved-count">0</span>
+	<span class="team-rank suffix-th">20</span>
+	<span class="team-penalty">0</span>
+	<div class="results">
+
+		<span class="problem-result problem-0" data-problem-id="0"></span>
+
+		<span class="problem-result problem-1" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2" data-problem-id="2"></span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"></div>
+	<div class="team-title">
+		<span class="team-name">Gimsuhan-moo-turtles-and-durumy</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-10" class="team solved-0">
+	<span class="solved-count">0</span>
+	<span class="team-rank suffix-th">20</span>
+	<span class="team-penalty">0</span>
+	<div class="results">
+
+		<span class="problem-result problem-0" data-problem-id="0"></span>
+
+		<span class="problem-result problem-1" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2" data-problem-id="2"></span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"></div>
+	<div class="team-title">
+		<span class="team-name">Joon</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-14" class="team solved-0">
+	<span class="solved-count">0</span>
+	<span class="team-rank suffix-th">20</span>
+	<span class="team-penalty">0</span>
+	<div class="results">
+
+		<span class="problem-result problem-0" data-problem-id="0"></span>
+
+		<span class="problem-result problem-1" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2" data-problem-id="2"></span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"></div>
+	<div class="team-title">
+		<span class="team-name">Luimyway</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-15" class="team solved-0">
+	<span class="solved-count">0</span>
+	<span class="team-rank suffix-th">20</span>
+	<span class="team-penalty">0</span>
+	<div class="results">
+
+		<span class="problem-result problem-0" data-problem-id="0"></span>
+
+		<span class="problem-result problem-1" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2" data-problem-id="2"></span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"></div>
+	<div class="team-title">
+		<span class="team-name">nil</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-24" class="team solved-0">
+	<span class="solved-count">0</span>
+	<span class="team-rank suffix-th">20</span>
+	<span class="team-penalty">0</span>
+	<div class="results">
+
+		<span class="problem-result problem-0" data-problem-id="0"></span>
+
+		<span class="problem-result problem-1" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2" data-problem-id="2"></span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"></div>
+	<div class="team-title">
+		<span class="team-name">thadi</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div><div id="team-27" class="team solved-0">
+	<span class="solved-count last">0</span>
+	<span class="team-rank suffix-th">20</span>
+	<span class="team-penalty">0</span>
+	<div class="results">
+
+		<span class="problem-result problem-0 failed" data-problem-id="0">-2</span>
+
+		<span class="problem-result problem-1" data-problem-id="1"></span>
+
+		<span class="problem-result problem-2" data-problem-id="2"></span>
+
+		<span class="problem-result problem-3" data-problem-id="3"></span>
+
+		<span class="problem-result problem-4" data-problem-id="4"></span>
+
+	</div>
+	<div class="balloons"></div>
+	<div class="team-title">
+		<span class="team-name">yejin</span>
+		<span class="team-represents"></span>
+	</div>
+	<div class="clear"></div>
+</div></div>
+
+			<!-- Footer -->
+			<div id="credits">
+				<span>
+					Spotboard Project from <a href="http://www.algospot.com/">algospot.com</a>,
+					<a href="http://www.catcoder.net/">Being</a> and <a href="http://wook.kr/">wookayin</a>
+				</span>
+				<span id="system-information">CSUS Programming Contest System Version 9.2.5 20151014 (Wednesday, October 14th 2015 03:59 UTC) Java ver 1.7.0_101 build 3204 Linux 3.13.0-74-generic (amd64) </span>
+				<span>Icons from <a href="http://www.fatcow.com/free-icons">FatCow</a></span>
+			</div>
+
+			<!-- Dashboard -->
+			<div id="dashboard">
+				<h2>
+					Recent events ::
+					<a id="events-filter"></a>
+				</h2>
+				<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;"><ul class="runs" style="overflow: hidden; width: auto; height: 100%;"><li class="run failed" data-runid="156">					<div class="balloon problem-2"></div>					Team <span class="team">GLUCA</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(180 min.)				</li><li class="run failed" data-runid="155">					<div class="balloon problem-3"></div>					Team <span class="team">Lhw</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(179 min.)				</li><li class="run failed" data-runid="154">					<div class="balloon problem-2"></div>					Team <span class="team">GLUCA</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(179 min.)				</li><li class="run failed" data-runid="153">					<div class="balloon problem-4"></div>					Team <span class="team">Vega</span>					got <span class="status">NO</span> on					<span class="problem">E</span>!					(179 min.)				</li><li class="run failed" data-runid="152">					<div class="balloon problem-2"></div>					Team <span class="team">goginyamnyam</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(178 min.)				</li><li class="run failed" data-runid="151">					<div class="balloon problem-2"></div>					Team <span class="team">goginyamnyam</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(178 min.)				</li><li class="run failed" data-runid="150">					<div class="balloon problem-1"></div>					Team <span class="team">Nyamnyam</span>					got <span class="status">NO</span> on					<span class="problem">B</span>!					(178 min.)				</li><li class="run failed" data-runid="149">					<div class="balloon problem-2"></div>					Team <span class="team">goginyamnyam</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(177 min.)				</li><li class="run failed" data-runid="148">					<div class="balloon problem-3"></div>					Team <span class="team">Jonjaler</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(175 min.)				</li><li class="run failed" data-runid="147">					<div class="balloon problem-3"></div>					Team <span class="team">Lhw</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(175 min.)				</li><li class="run failed" data-runid="146">					<div class="balloon problem-4"></div>					Team <span class="team">Vega</span>					got <span class="status">NO</span> on					<span class="problem">E</span>!					(175 min.)				</li><li class="run failed" data-runid="145">					<div class="balloon problem-2"></div>					Team <span class="team">SHIM</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(173 min.)				</li><li class="run failed" data-runid="144">					<div class="balloon problem-4"></div>					Team <span class="team">Vega</span>					got <span class="status">NO</span> on					<span class="problem">E</span>!					(172 min.)				</li><li class="run failed" data-runid="143">					<div class="balloon problem-3"></div>					Team <span class="team">Lhw</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(172 min.)				</li><li class="run failed" data-runid="142">					<div class="balloon problem-2"></div>					Team <span class="team">Seo Geurim</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(170 min.)				</li><li class="run failed" data-runid="141">					<div class="balloon problem-2"></div>					Team <span class="team">GLUCA</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(169 min.)				</li><li class="run failed" data-runid="140">					<div class="balloon problem-4"></div>					Team <span class="team">Vega</span>					got <span class="status">NO</span> on					<span class="problem">E</span>!					(169 min.)				</li><li class="run failed" data-runid="139">					<div class="balloon problem-3"></div>					Team <span class="team">Jonjaler</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(169 min.)				</li><li class="run failed" data-runid="138">					<div class="balloon problem-2"></div>					Team <span class="team">Seo Geurim</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(169 min.)				</li><li class="run failed" data-runid="137">					<div class="balloon problem-3"></div>					Team <span class="team">Lhw</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(168 min.)				</li><li class="run failed" data-runid="136">					<div class="balloon problem-2"></div>					Team <span class="team">Seo Geurim</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(168 min.)				</li><li class="run failed" data-runid="135">					<div class="balloon problem-3"></div>					Team <span class="team">Jonjaler</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(166 min.)				</li><li class="run failed" data-runid="134">					<div class="balloon problem-3"></div>					Team <span class="team">Jonjaler</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(165 min.)				</li><li class="run failed" data-runid="133">					<div class="balloon problem-2"></div>					Team <span class="team">GLUCA</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(163 min.)				</li><li class="run failed" data-runid="132">					<div class="balloon problem-2"></div>					Team <span class="team">Tissue</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(163 min.)				</li><li class="run failed" data-runid="131">					<div class="balloon problem-3"></div>					Team <span class="team">Lhw</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(163 min.)				</li><li class="run failed" data-runid="130">					<div class="balloon problem-2"></div>					Team <span class="team">GLUCA</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(163 min.)				</li><li class="run failed" data-runid="129">					<div class="balloon problem-3"></div>					Team <span class="team">goginyamnyam</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(162 min.)				</li><li class="run failed" data-runid="128">					<div class="balloon problem-3"></div>					Team <span class="team">Jonjaler</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(161 min.)				</li><li class="run failed" data-runid="127">					<div class="balloon problem-3"></div>					Team <span class="team">Pneumonoultramicroscopicsilicovolcanoconiosis</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(161 min.)				</li><li class="run accepted" data-runid="126">					<div class="balloon problem-1"></div>					Team <span class="team">Seo Geurim</span>					got <span class="status">YES</span> on					<span class="problem">B</span>!					(160 min.)				</li><li class="run failed" data-runid="125">					<div class="balloon problem-4"></div>					Team <span class="team">Vega</span>					got <span class="status">NO</span> on					<span class="problem">E</span>!					(160 min.)				</li><li class="run failed" data-runid="124">					<div class="balloon problem-2"></div>					Team <span class="team">GLUCA</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(159 min.)				</li><li class="run failed" data-runid="123">					<div class="balloon problem-2"></div>					Team <span class="team">GLUCA</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(159 min.)				</li><li class="run failed" data-runid="122">					<div class="balloon problem-3"></div>					Team <span class="team">Lhw</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(158 min.)				</li><li class="run failed" data-runid="121">					<div class="balloon problem-2"></div>					Team <span class="team">GLUCA</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(157 min.)				</li><li class="run failed" data-runid="120">					<div class="balloon problem-2"></div>					Team <span class="team">parkjaehoon</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(157 min.)				</li><li class="run failed" data-runid="119">					<div class="balloon problem-2"></div>					Team <span class="team">Tissue</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(157 min.)				</li><li class="run pending" data-runid="118">					<div class="balloon problem-3"></div>					Team <span class="team">Lhw</span>					has submitted					<span class="problem">D</span>!					(156 min.)				</li><li class="run failed" data-runid="117">					<div class="balloon problem-2"></div>					Team <span class="team">GLUCA</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(156 min.)				</li><li class="run failed" data-runid="116">					<div class="balloon problem-1"></div>					Team <span class="team">Nyamnyam</span>					got <span class="status">NO</span> on					<span class="problem">B</span>!					(155 min.)				</li><li class="run failed" data-runid="115">					<div class="balloon problem-1"></div>					Team <span class="team">Tissue</span>					got <span class="status">NO</span> on					<span class="problem">B</span>!					(154 min.)				</li><li class="run accepted" data-runid="114">					<div class="balloon problem-1"></div>					Team <span class="team">GANZI</span>					got <span class="status">YES</span> on					<span class="problem">B</span>!					(153 min.)				</li><li class="run failed" data-runid="113">					<div class="balloon problem-2"></div>					Team <span class="team">Nyamnyam</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(152 min.)				</li><li class="run failed" data-runid="112">					<div class="balloon problem-2"></div>					Team <span class="team">Tissue</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(151 min.)				</li><li class="run accepted" data-runid="111">					<div class="balloon problem-1"></div>					Team <span class="team">revive</span>					got <span class="status">YES</span> on					<span class="problem">B</span>!					(151 min.)				</li><li class="run failed" data-runid="110">					<div class="balloon problem-2"></div>					Team <span class="team">GLUCA</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(150 min.)				</li><li class="run failed" data-runid="109">					<div class="balloon problem-2"></div>					Team <span class="team">Sati</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(149 min.)				</li><li class="run failed" data-runid="108">					<div class="balloon problem-3"></div>					Team <span class="team">Lhw</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(148 min.)				</li><li class="run failed" data-runid="107">					<div class="balloon problem-3"></div>					Team <span class="team">Lhw</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(141 min.)				</li><li class="run failed" data-runid="106">					<div class="balloon problem-2"></div>					Team <span class="team">SHIM</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(141 min.)				</li><li class="run failed" data-runid="105">					<div class="balloon problem-3"></div>					Team <span class="team">goginyamnyam</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(140 min.)				</li><li class="run accepted" data-runid="104">					<div class="balloon problem-1"></div>					Team <span class="team">SHIM</span>					got <span class="status">YES</span> on					<span class="problem">B</span>!					(139 min.)				</li><li class="run failed" data-runid="103">					<div class="balloon problem-2"></div>					Team <span class="team">parkjaehoon</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(138 min.)				</li><li class="run failed" data-runid="102">					<div class="balloon problem-2"></div>					Team <span class="team">Jk</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(137 min.)				</li><li class="run failed" data-runid="101">					<div class="balloon problem-3"></div>					Team <span class="team">Jonjaler</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(127 min.)				</li><li class="run failed" data-runid="100">					<div class="balloon problem-2"></div>					Team <span class="team">SHIM</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(125 min.)				</li><li class="run failed" data-runid="99">					<div class="balloon problem-2"></div>					Team <span class="team">parkjaehoon</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(122 min.)				</li><li class="run failed" data-runid="98">					<div class="balloon problem-3"></div>					Team <span class="team">Jonjaler</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(122 min.)				</li><li class="run failed" data-runid="97">					<div class="balloon problem-0"></div>					Team <span class="team">Seo Geurim</span>					got <span class="status">NO</span> on					<span class="problem">A</span>!					(121 min.)				</li><li class="run failed" data-runid="96">					<div class="balloon problem-2"></div>					Team <span class="team">Jonjaler</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(119 min.)				</li><li class="run failed" data-runid="95">					<div class="balloon problem-3"></div>					Team <span class="team">Jonjaler</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(119 min.)				</li><li class="run failed" data-runid="94">					<div class="balloon problem-2"></div>					Team <span class="team">Seo Geurim</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(118 min.)				</li><li class="run failed" data-runid="93">					<div class="balloon problem-1"></div>					Team <span class="team">Nyamnyam</span>					got <span class="status">NO</span> on					<span class="problem">B</span>!					(117 min.)				</li><li class="run accepted" data-runid="92">					<div class="balloon problem-1"></div>					Team <span class="team">Jonjaler</span>					got <span class="status">YES</span> on					<span class="problem">B</span>!					(117 min.)				</li><li class="run accepted" data-runid="91">					<div class="balloon problem-2"></div>					Team <span class="team">Vega</span>					got <span class="status">YES</span> on					<span class="problem">C</span>!					(115 min.)				</li><li class="run failed" data-runid="90">					<div class="balloon problem-2"></div>					Team <span class="team">HiHy</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(114 min.)				</li><li class="run failed" data-runid="89">					<div class="balloon problem-2"></div>					Team <span class="team">Nyamnyam</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(111 min.)				</li><li class="run failed" data-runid="88">					<div class="balloon problem-2"></div>					Team <span class="team">Sati</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(110 min.)				</li><li class="run failed" data-runid="87">					<div class="balloon problem-2"></div>					Team <span class="team">Sati</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(108 min.)				</li><li class="run failed" data-runid="86">					<div class="balloon problem-2"></div>					Team <span class="team">Sati</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(107 min.)				</li><li class="run failed" data-runid="85">					<div class="balloon problem-2"></div>					Team <span class="team">Kwonchaeeun</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(106 min.)				</li><li class="run failed" data-runid="84">					<div class="balloon problem-2"></div>					Team <span class="team">Sati</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(106 min.)				</li><li class="run accepted" data-runid="83">					<div class="balloon problem-0"></div>					Team <span class="team">revive</span>					got <span class="status">YES</span> on					<span class="problem">A</span>!					(106 min.)				</li><li class="run failed" data-runid="82">					<div class="balloon problem-2"></div>					Team <span class="team">Vega</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(104 min.)				</li><li class="run failed" data-runid="81">					<div class="balloon problem-3"></div>					Team <span class="team">Lhw</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(103 min.)				</li><li class="run failed" data-runid="80">					<div class="balloon problem-2"></div>					Team <span class="team">Vega</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(101 min.)				</li><li class="run failed" data-runid="79">					<div class="balloon problem-3"></div>					Team <span class="team">Lhw</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(100 min.)				</li><li class="run failed" data-runid="78">					<div class="balloon problem-3"></div>					Team <span class="team">Jonjaler</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(97 min.)				</li><li class="run accepted" data-runid="77">					<div class="balloon problem-3"></div>					Team <span class="team">Vega</span>					got <span class="status">YES</span> on					<span class="problem">D</span>!					(94 min.)				</li><li class="run failed" data-runid="76">					<div class="balloon problem-2"></div>					Team <span class="team">goginyamnyam</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(94 min.)				</li><li class="run failed" data-runid="75">					<div class="balloon problem-2"></div>					Team <span class="team">goginyamnyam</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(94 min.)				</li><li class="run failed" data-runid="74">					<div class="balloon problem-2"></div>					Team <span class="team">Tissue</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(91 min.)				</li><li class="run failed" data-runid="73">					<div class="balloon problem-3"></div>					Team <span class="team">Vega</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(89 min.)				</li><li class="run accepted" data-runid="72">					<div class="balloon problem-1"></div>					Team <span class="team">ohj</span>					got <span class="status">YES</span> on					<span class="problem">B</span>!					(83 min.)				</li><li class="run failed" data-runid="71">					<div class="balloon problem-3"></div>					Team <span class="team">Jonjaler</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(83 min.)				</li><li class="run failed" data-runid="70">					<div class="balloon problem-2"></div>					Team <span class="team">HiHy</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(75 min.)				</li><li class="run failed" data-runid="69">					<div class="balloon problem-1"></div>					Team <span class="team">Nyamnyam</span>					got <span class="status">NO</span> on					<span class="problem">B</span>!					(75 min.)				</li><li class="run failed" data-runid="68">					<div class="balloon problem-2"></div>					Team <span class="team">HiHy</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(73 min.)				</li><li class="run failed" data-runid="67">					<div class="balloon problem-2"></div>					Team <span class="team">Tissue</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(73 min.)				</li><li class="run failed" data-runid="66">					<div class="balloon problem-2"></div>					Team <span class="team">Nyamnyam</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(70 min.)				</li><li class="run failed" data-runid="65">					<div class="balloon problem-2"></div>					Team <span class="team">Pneumonoultramicroscopicsilicovolcanoconiosis</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(67 min.)				</li><li class="run accepted" data-runid="64">					<div class="balloon problem-1"></div>					Team <span class="team">Lhw</span>					got <span class="status">YES</span> on					<span class="problem">B</span>!					(66 min.)				</li><li class="run accepted" data-runid="63">					<div class="balloon problem-1"></div>					Team <span class="team">Pneumonoultramicroscopicsilicovolcanoconiosis</span>					got <span class="status">YES</span> on					<span class="problem">B</span>!					(65 min.)				</li><li class="run failed" data-runid="62">					<div class="balloon problem-0"></div>					Team <span class="team">yejin</span>					got <span class="status">NO</span> on					<span class="problem">A</span>!					(65 min.)				</li><li class="run failed" data-runid="61">					<div class="balloon problem-3"></div>					Team <span class="team">Vega</span>					got <span class="status">NO</span> on					<span class="problem">D</span>!					(63 min.)				</li><li class="run failed" data-runid="60">					<div class="balloon problem-1"></div>					Team <span class="team">Lhw</span>					got <span class="status">NO</span> on					<span class="problem">B</span>!					(61 min.)				</li><li class="run failed" data-runid="59">					<div class="balloon problem-2"></div>					Team <span class="team">parkjaehoon</span>					got <span class="status">NO</span> on					<span class="problem">C</span>!					(60 min.)				</li><li class="run accepted" data-runid="58">					<div class="balloon problem-0"></div>					Team <span class="team">parkjaehoon</span>					got <span class="status">YES</span> on					<span class="problem">A</span>!					(59 min.)				</li><li class="run failed" data-runid="57">					<div class="balloon problem-1"></div>					Team <span class="team">HiHy</span>					got <span class="status">NO</span> on					<span class="problem">B</span>!					(44 min.)				</li></ul><div class="slimScrollBar ui-draggable" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; left: 1px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; left: 1px; background: rgb(51, 51, 51);"></div></div>
+			</div>
+      <div class="clear"></div>
+		</div>
+	</div>
+
+
+</body></html>

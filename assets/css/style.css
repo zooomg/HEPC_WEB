@@ -51,10 +51,13 @@ iframe body {
   margin: 4em 0em 3em;
 }
 
-.ui.container > .menu > h1 {
+#hepc {
   font-family: 'Star Avenue';
 }
 
+.ui.grid > .colum {
+  margin: auto;
+}
 
 .ui.table {
   table-layout: fixed;
@@ -80,7 +83,6 @@ iframe body {
   margin-bottom: 0em;
   font-size: 4em;
   font-weight: normal;
-  font-family: 'Star Avenue';
 }
 .masthead h2 {
   font-size: 1.7em;

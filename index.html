@@ -25,7 +25,7 @@
       <div class="ui vertical masthead center aligned segment">
         <div class="ui container">
           <div class="ui inverted secondary menu">
-            <h1 class="header item">HEPC
+            <h1 class="header item" id="hepc">HEPC
             </h1>
             <div class="right item">
             <div class="ui stackable secondary menu">
@@ -94,7 +94,7 @@
         </div>
         <div class="ui text container">
           <h1 class="ui inverted header">
-            사이트 준비중
+            안녕하세요
           </h1>
           <h2 class="ui inverted header">
           </h2>
@@ -111,7 +111,7 @@
             <img class="ui tiny image" src="./assets/image/Think.png">
             <div class="content">
               THINK
-              <div class="sub header">개인 혹은 팀으로 구성되어 주어진 문제를 제한시간 내에<br>빠르고 정확하게 해결하는 대회입니다. 각 팀 별로<br> 해결한 문제의 수와걸린 시간으로 순위를 매깁니다.</div>
+              <div class="sub header">개인 혹은 팀으로 구성되어 주어진 문제를 제한시간 내에<br>빠르고 정확하게 해결하는 대회입니다. 각 팀 별로<br> 해결한 문제의 수와 걸린 시간으로 순위를 매깁니다.</div>
             </div>
           </h2>
         </div>
@@ -153,7 +153,7 @@
           <div class="ui bulleted list">          
             <div class="item">참여 시 팀당 노트북 1대를 반드시 지참해야 합니다.</div>
             <div class="item">본 대회 당일 팀 멤버 모두 참석해야하며, 학생증을 지참해야 합니다.</div>
-            <div class="item">허위 정보로 대회 접수를 접수하시면 불이익이 있을 수 있습니다.</div>
+            <div class="item">허위 정보로 대회 접수시 대회 참가 2년 정지 및 기타 불이익이 있습니다.</div>
             <div class="item">Maven Division 팀 구성시 역대 ICPC 본선 진출자 2명 이상이 같은 팀으로 참가하는 것은 불가능합니다.</div>
             <div class="item">융합전공/복수전공/부전공/다중전공으로 "ERICA캠퍼스 소프트웨어학부/컴퓨터공학과" 소속일 경우 전공자에 포함됩니다.(2018 1학기에 복수전공/부전공/다중전공/융합전공을 시작하신 경우 PRIME에 참여하실 수 있습니다, 추후 증빙서류 제출)</div>
           </div>
@@ -272,11 +272,28 @@
 	  <div class="ui basic segment">
 	  <div class="ui stackable  grid">
               <div class="colum">
-	      <img class="ui tiny image" src="./assets/image/dcs_logo.png">
+                  <div class="ui tiny horizontal statistic">
+                      <div class="value" id="hepc">
+                         hepc
+                      </div>
+                      <div class="label">
+                         운영위원회
+                      </div>
+                  </div>
 	      </div>
 	      <div class="colum">
-	      
+	          <div class="ui tiny statistic">
+                      <div class="label">
+                      한양대ERICA
+                      </div>
+                      <div class="value">
+                      sw교육센터
+                      </div>
+                  </div>
 	      </div>
+              <div class="colum">
+                  <img class="ui small image" src="./assets/image/logo-black-only.png">
+              </div>
 	  </div>
         </div>
       </div>
@@ -292,7 +309,7 @@
 
   <div class="ui basic modal">
     <i class="close icon"></i>
-    <div class="header">
+    <div class="header" id="hepc">
       2018 HEPC 
     </div>
     <div class="content" id="adduser">
@@ -317,14 +334,14 @@
           </div>
         </div>
         <h4 class="ui dividing inverted header">Student 1</h4>
-        <div class="six fields">
+        <div class="five fields">
           <div class="field">
             <label>Name</label>
             <input type="text" placeholder="신입생" name ="Name1">
           </div>
           <div class="field">
             <label>Student number</label>
-            <input type="text" placeholder="2017012368" name="Student_ID1">
+            <input type="text" placeholder="2018012368" name="Student_ID1">
           </div>
           <div class="field">
             <label>Email</label>
@@ -340,14 +357,14 @@
           </div>
         </div>
         <h4 class="ui dividing inverted header">Student 2</h4>
-        <div class="six disabled fields" id="std2">
+        <div class="five disabled fields" id="std2">
           <div class="field">
             <label>Name</label>
             <input type="text" placeholder="신입생" name ="Name2" disabled="disabled">
           </div>
           <div class="field">
             <label>Student number</label>
-            <input type="text" placeholder="2017012368" name="Student_ID2" disabled="disabled">
+            <input type="text" placeholder="2018012368" name="Student_ID2" disabled="disabled">
           </div>
           <div class="field">
             <label>Email</label>
@@ -363,14 +380,14 @@
           </div>
         </div>
         <h4 class="ui dividing inverted header">Student 3</h4>
-        <div class="six disabled fields" id="std3">
+        <div class="five disabled fields" id="std3">
           <div class="field">
             <label>Name</label>
             <input type="text" placeholder="신입생" name ="Name3" disabled="disabled">
           </div>
           <div class="field">
             <label>Student number</label>
-            <input type="text" placeholder="2017012368" name="Student_ID3" disabled="disabled">
+            <input type="text" placeholder="2018012368" name="Student_ID3" disabled="disabled">
           </div>
           <div class="field">
             <label>Email</label>
